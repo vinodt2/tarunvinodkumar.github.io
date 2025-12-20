@@ -257,7 +257,8 @@ span.highlight {
 }
 
 body {
-  background-color: #f4f7fb !important;  /* light blue */
+  /*background-color: #f4f7fb !important;  /* light blue */
+  background-color: #8FBC8F !important;  /* dark sea green */
 }
 
 body > table {
