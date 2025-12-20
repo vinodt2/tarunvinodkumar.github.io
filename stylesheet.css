@@ -244,7 +244,7 @@ span.highlight {
 }
 
 .date-col {
-  min-width: 300px;   /* fixed width for all dates */
+  min-width: 300px;   /* change widths to change distance of right column of tabs */
   max-width: 300px;
   font-size: 11px;
   letter-spacing: 0.14em;
