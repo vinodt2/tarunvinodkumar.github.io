@@ -236,3 +236,22 @@ span.highlight {
   margin-top: 4px;
   margin-bottom: 0;
 }
+
+.group-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.date-col {
+  min-width: 130px;   /* fixed width for all dates */
+  max-width: 130px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.entry-col {
+  flex: 1;
+}
