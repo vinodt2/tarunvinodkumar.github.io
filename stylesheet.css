@@ -81,7 +81,15 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;      /* was 14px */
+  line-height: 1.6;     /* add line height for readability */
+}
+
+.name {
+  padding-top: 24px;
+  margin: 0;
+  font-size: 34px;      /* slightly larger */
+  font-weight: 700;
 }
 
 strong {
