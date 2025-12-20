@@ -262,6 +262,22 @@ span.highlight {
   flex: 1;
 }
 
+.pub-title {
+  font-size: 20px;      /* larger paper title */
+  font-weight: 550;
+  /*color: #406f3c;       /* or #111111 if you prefer black */
+  margin-bottom: 8px;
+}
+
+.pub-authors {
+  font-size: 16px;
+}
+
+.pub-author-me {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 body {
   /*background-color: #f4f7fb !important;  /* light blue */
   /*background-color: #8FBC8F !important;  /* dark sea green */
