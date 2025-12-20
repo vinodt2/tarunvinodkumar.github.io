@@ -264,13 +264,14 @@ span.highlight {
 
 .pub-title {
   font-size: 20px;      /* larger paper title */
-  font-weight: 550;
+  font-weight: 600;
   /*color: #406f3c;       /* or #111111 if you prefer black */
   margin-bottom: 8px;
 }
 
 .pub-authors {
   font-size: 16px;
+  font-weight: 500px;
 }
 
 .pub-author-me {
