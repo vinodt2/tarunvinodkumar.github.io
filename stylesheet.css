@@ -140,3 +140,27 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.tabs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tablink {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tablink.active {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.tabcontent {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
