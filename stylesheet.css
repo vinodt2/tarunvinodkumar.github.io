@@ -257,9 +257,9 @@ span.highlight {
 }
 
 body {
-  background-color: #f4f7fb;  /* light blue */
+  background-color: #f4f7fb !important;  /* light blue */
 }
 
-table {
+body > table {
   background-color: #ffffff;  /* white */
 }
