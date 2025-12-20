@@ -258,7 +258,8 @@ span.highlight {
 
 body {
   /*background-color: #f4f7fb !important;  /* light blue */
-  background-color: #8FBC8F !important;  /* dark sea green */
+  /*background-color: #8FBC8F !important;  /* dark sea green */
+  background-color: #ACE1AF !important; /* celadon */
 }
 
 body > table {
