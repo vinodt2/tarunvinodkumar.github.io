@@ -64,14 +64,15 @@
 }
 
 a {
-  /*color: #1772d0;*/
+  /*color: #1772d0; /* blue */
   color: #669966;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  /*color: #f09228; /* orange */
+  color: #d2b48c; /* warm tan */
   text-decoration: none;
 }
 
@@ -170,8 +171,7 @@ span.highlight {
 
 .tablink.active {
   color: #111111;
-  border-bottom-color: #1772d0; /* your link blue */
-  
+  /*border-bottom-color: #1772d0; /* your link blue */
   border-bottom-color: #669966; /* your link russian green */
 }
 
