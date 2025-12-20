@@ -213,12 +213,14 @@ span.highlight {
 }
 
 /* Left column (dates) */
+/*
 .group .date-col {
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #777777;
 }
+*/
 
 /* Right column title */
 .group .org-title {
@@ -247,10 +249,10 @@ span.highlight {
 }
 
 .date-col {
-  min-width: 170px;   /* change widths to change distance of right column of tabs */
-  max-width: 170px;
-  font-size: 11px;
-  letter-spacing: 0.14em;
+  min-width: 200px;   /* change widths to change distance of right column of tabs */
+  max-width: 200px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #777777;
 }
