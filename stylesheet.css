@@ -279,8 +279,8 @@ span.highlight {
 }
 
 .pub-image {
-  width: 120px;      /* adjust to your figure */
-  height: 120px;
+  width: 200px;      /* adjust to your figure */
+  height: 200px;
   flex-shrink: 0;
   border-radius: 12px;
   overflow: hidden;
