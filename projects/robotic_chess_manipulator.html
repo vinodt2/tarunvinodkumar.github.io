@@ -2,19 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Robotic Chess Manipulator – Tarun Vinodkumar</title>
-  <!-- Reuse your main CSS; adjust path if needed -->
-  <link rel="stylesheet" href="../stylesheet.css">
+  <title>Robotic Chess Manipulator - Tarun Vinodkumar</title>
+  <!-- Same stylesheet as main page -->
+  <link rel="stylesheet" href="stylesheet.css">
   <style>
     /* Local tweaks just for this page */
-    .project-wrapper {
-      width: 100%;
-      max-width: 900px;
-      margin: 40px auto;
-      border: 0;
-      border-spacing: 0;
-    }
-
     .project-title {
       font-size: 26px;
       font-weight: 700;
@@ -78,102 +70,113 @@
   </style>
 </head>
 <body>
-  <table class="project-wrapper">
-    <tr>
-      <td style="padding:16px;">
+  <!-- same outer table shell as index.html -->
+  <table style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
 
-        <a href="../index.html#projects" class="back-link">← Back to selected projects</a>
+                  <a href="index.html#projects" class="back-link">← Back to selected projects</a>
 
-        <div class="project-title">Robotic Chess Manipulator</div>
-        <div class="project-subtitle">
-          ME 4405 – Mechatronics Design, Georgia Tech · Fall 2025
-        </div>
+                  <div class="project-title">Robotic Chess Manipulator</div>
+                  <div class="project-subtitle">
+                    ME 4405 - Mechatronics Design, Georgia Tech · Fall 2025
+                  </div>
 
-        <!-- Optional hero image: replace src with your project photo -->
-        <div class="project-hero">
-          <img src="../images/tarun/robotic_chess_manipulator.jpg"
-               alt="Robotic chess piece manipulation system on a gantry">
-        </div>
+                  <!-- Optional hero image: replace src with your project photo -->
+                  <div class="project-hero">
+                    <img src="images/tarun/grasperCAD.png"
+                         alt="Robotic chess piece manipulation system on a gantry">
+                  </div>
 
-        <div class="project-metadata">
-          <span class="pill">Team project</span>
-          <span class="pill">STM32 · UART · Stepper control</span>
-          <span class="pill">Sensing & actuation</span>
-        </div>
+                  <div class="project-metadata">
+                    <span class="pill">Team project</span>
+                    <span class="pill">STM32 · UART · Stepper control</span>
+                    <span class="pill">Sensing &amp; actuation</span>
+                  </div>
 
-        <p>
-          This project developed a robotic system capable of grasping and placing chess pieces
-          on a board with accurate positioning. The system combines a 3D‑printer gantry, a
-          custom rack‑and‑pinion grasper, and closed‑loop sensing to pick up a specified piece,
-          move it to a new square, and place it reliably within the 3.5 cm by 3.5 cm bounds of
-          each tile.[file:151]
-        </p>
+                  <p>
+                    This project developed a robotic system capable of grasping and placing chess pieces
+                    on a board with accurate positioning. The system combines a 3D-printer gantry, a
+                    custom rack-and-pinion grasper, and closed-loop sensing to pick up a specified piece,
+                    move it to a new square, and place it reliably within the 3.5 cm by 3.5 cm bounds of
+                    each tile.
+                  </p>
 
-        <div class="project-section-title">Motivation & Aim</div>
-        <p>
-          The goal was to design a generalizable small‑object manipulation platform, instantiated
-          as a robotic chess manipulator. A user enters the source and destination squares; the
-          robot moves to the correct position, grasps the piece, translates across the board,
-          and places the piece at the new location.[file:151]
-        </p>
+                  <div class="project-section-title">Motivation &amp; Aim</div>
+                  <p>
+                    The goal was to design a generalizable small-object manipulation platform, instantiated
+                    as a robotic chess manipulator. A user enters the source and destination squares; the
+                    robot moves to the correct position, grasps the piece, translates across the board,
+                    and places the piece at the new location.
+                  </p>
 
-        <div class="project-section-title">Performance Metrics</div>
-        <ul class="proj-list">
-          <li>Pick and place within the 3.5 cm × 3.5 cm target square bounds.</li>
-          <li>Accurate sensing of when the piece contacts the board to control z‑motion.</li>
-        </ul>[file:151]
+                  <div class="project-section-title">Performance Metrics</div>
+                  <ul class="proj-list">
+                    <li>Pick and place within the 3.5 cm &times; 3.5 cm target square bounds.</li>
+                    <li>Accurate sensing of when the piece contacts the board to control z-motion.</li>
+                  </ul>
 
-        <div class="project-section-title">Mechanical & Mechatronic Design</div>
-        <p>
-          The custom grasper uses a rack‑and‑pinion mechanism driven by a 28BYJ stepper motor.
-          The design integrates a rod–bearing interface and opposed paddles to provide a secure,
-          symmetric grasp on standard chess pieces while remaining compact and lightweight.[file:151]
-        </p>
+                  <div class="project-section-title">Mechanical &amp; Mechatronic Design</div>
+                  <p>
+                    The custom grasper uses a rack-and-pinion mechanism driven by a 28BYJ stepper motor.
+                    The design integrates a rod-bearing interface and opposed paddles to provide a secure,
+                    symmetric grasp on standard chess pieces while remaining compact and lightweight.
+                  </p>
 
-        <div class="project-section-title">Sensors & Actuators</div>
-        <p><strong>Actuators.</strong> A 28BYJ stepper motor provides the gripping motion, chosen for
-          its 3.4 N·cm holding torque, low current draw, and small form factor, which satisfied
-          the torque and packaging requirements of the grasper.[file:151]</p>
-        <p><strong>Sensors.</strong> A Hall‑effect sensor detects proximity of the piece to the board,
-          triggering the release and ensuring consistent placement even for pieces of varying height.
-          The sensor’s small footprint and sufficient sensitivity allowed simple circuitry and robust
-          operation across multiple piece geometries.[file:151]</p>
+                  <div class="project-section-title">Sensors &amp; Actuators</div>
+                  <p><strong>Actuators.</strong> A 28BYJ stepper motor provides the gripping motion, chosen for
+                    its 3.4 N·cm holding torque, low current draw, and small form factor, which satisfied
+                    the torque and packaging requirements of the grasper.</p>
+                  <p><strong>Sensors.</strong> A Hall-effect sensor detects proximity of the piece to the board,
+                    triggering the release and ensuring consistent placement even for pieces of varying height.
+                    The sensor's small footprint and sufficient sensitivity allowed simple circuitry and robust
+                    operation across multiple piece geometries.</p>
 
-        <div class="project-section-title">Control & State Machine</div>
-        <p>
-          The system is orchestrated by an STM microcontroller communicating with a host computer
-          and the 3D‑printer gantry. A state machine coordinates motion and grasping: moving to the
-          source square, closing the grasper, lifting, translating to the destination square, sensing
-          board proximity via the Hall‑effect sensor, and opening the grasper to release the piece.[file:151]
-        </p>
+                  <div class="project-section-title">Control &amp; State Machine</div>
+                  <p>
+                    The system is orchestrated by an STM microcontroller communicating with a host computer
+                    and the 3D-printer gantry. A state machine coordinates motion and grasping: moving to the
+                    source square, closing the grasper, lifting, translating to the destination square, sensing
+                    board proximity via the Hall-effect sensor, and opening the grasper to release the piece.
+                  </p>
 
-        <div class="project-section-title">Challenges & Iteration</div>
-        <ul class="proj-list">
-          <li>Initial motor driver and stepper choice produced jittery, partial‑step motion, leading
-              the team to pivot back to lab‑standard steppers.[file:151]</li>
-          <li>An early FSR‑based grasp‑force sensor proved unreliable and alignment‑sensitive, so it
-              was replaced with the more robust Hall‑effect sensing scheme.[file:151]</li>
-          <li>Coordinating communication among the STM, laptop, and 3D‑printer controller required
-              careful handling of UART/serial links and debugging tools.</li>
-          <li>Multiple design iterations were needed to tune 3D‑printed tolerances and scale the
-              original grasper concept to fit the gantry hardware.[file:151]</li>
-        </ul>
+                  <div class="project-section-title">Challenges &amp; Iteration</div>
+                  <ul class="proj-list">
+                    <li>Initial motor driver and stepper choice produced jittery, partial-step motion, leading
+                        the team to pivot back to lab-standard steppers.</li>
+                    <li>An early FSR-based grasp-force sensor proved unreliable and alignment-sensitive, so it
+                        was replaced with the more robust Hall-effect sensing scheme.</li>
+                    <li>Coordinating communication among the STM, laptop, and 3D-printer controller required
+                        careful handling of UART/serial links and debugging tools.</li>
+                    <li>Multiple design iterations were needed to tune 3D-printed tolerances and scale the
+                        original grasper concept to fit the gantry hardware.</li>
+                  </ul>
 
-        <div class="project-section-title">Outcomes & Next Steps</div>
-        <p>
-          The final system successfully performed repeated grasping, placing, and positioning of
-          chess pieces after extensive iteration. Key technical takeaways included STM–Python
-          communication over UART, step‑by‑step debugging using LEDs and serial terminals, and
-          the importance of wire management in physical prototypes.[file:151]
-        </p>
-        <p>
-          Future work would expand the instrumented board to support arbitrary placement squares by
-          multiplying the Hall‑effect sensing scheme, and further optimize the grasper by adding
-          textured contact surfaces and a dedicated feedback loop for grasp quality.[file:151]
-        </p>
+                  <div class="project-section-title">Outcomes &amp; Next Steps</div>
+                  <p>
+                    The final system successfully performed repeated grasping, placing, and positioning of
+                    chess pieces after extensive iteration. Key technical takeaways included STM-Python
+                    communication over UART, step-by-step debugging using LEDs and serial terminals, and
+                    the importance of wire management in physical prototypes.
+                  </p>
+                  <p>
+                    Future work would expand the instrumented board to support arbitrary placement squares by
+                    multiplying the Hall-effect sensing scheme, and further optimize the grasper by adding
+                    textured contact surfaces and a dedicated feedback loop for grasp quality.
+                  </p>
 
-      </td>
-    </tr>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>
