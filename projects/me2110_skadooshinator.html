@@ -90,6 +90,33 @@
     }
   </style>
 </head>
+
+<div id="image-modal" class="image-modal">
+  <span class="image-modal-close">✕</span>
+  <img src="" alt="Expanded view">
+</div>
+
+<script>
+  // Open modal with clicked image
+  document.addEventListener('click', function (e) {
+    const target = e.target;
+
+    // Only react to images with the class "zoomable"
+    if (target.tagName === 'IMG' && target.classList.contains('zoomable')) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = modal.querySelector('img');
+      modalImg.src = target.src;
+      modalImg.alt = target.alt;
+      modal.style.display = 'flex';
+    }
+
+    // Close when clicking the X or the dark background
+    if (target.id === 'image-modal' || target.classList.contains('image-modal-close')) {
+      document.getElementById('image-modal').style.display = 'none';
+    }
+  });
+</script>
+
 <body>
   <table style="width:100%;max-width:950px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -139,9 +166,11 @@
                   </p>
 
                   <div class="project-image-row">
-                    <img src="../images/tarun/KungFuPandaCompetitionTrack.png"
+                    <img class="zoomable"
+                         src="../images/tarun/KungFuPandaCompetitionTrack.png"
                          alt="Competition field layout for the ME 2110 Kung Fu Panda themed competition">
-                    <img src="../images/tarun/me2110houseOfQuality.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110houseOfQuality.png"
                          alt="House of Quality and constraints used to prioritize design requirements">
                   </div>
                   <div class="project-image-caption">
@@ -160,9 +189,11 @@
                   </p>
 
                   <div class="project-image-row">
-                    <img src="../images/tarun/me2110_cadOverview.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_cadOverview.png"
                          alt="CAD overview of the Skadooshinator showing major subsystems">
-                    <img src="../images/tarun/me2110_robotOnTrack.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_robotOnTrack.png"
                          alt="Photo of the completed Skadooshinator robot in competition">
                   </div>
                   <div class="project-image-caption">
@@ -192,15 +223,19 @@
                     interference from competing robots.
                   </p>
                   <div class="project-image-row">
-                    <img src="../images/tarun/me2110_extension.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_extension.png"
                          alt="Mechanism for extending to centerpiece">
-                    <img src="../images/tarun/me2110_defeatTaiLung.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_defeatTaiLung.png"
                          alt="Mechanism for defeating Tai Lung">
                   </div>
                   <div class="project-image-row">
-                    <img src="../images/tarun/me2110_collectDragonScroll.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_collectDragonScroll.png"
                          alt="Mechanism for collecting Dragon Scroll">
-                    <img src="../images/tarun/me2110_raisePo.png"
+                    <img class="zoomable"
+                         src="../images/tarun/me2110_raisePo.png"
                          alt="Mechanism for raising Po">
                   </div>
                   <div class="project-image-caption">
